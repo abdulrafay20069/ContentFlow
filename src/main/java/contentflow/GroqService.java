@@ -13,7 +13,8 @@ import java.io.IOException;
 public class GroqService {
 
     // This automatically reads your API key from application.properties
-    @Value("${groq.api.key}")
+    @Value("${GROQ_API_KEY}")
+private String apiKey;
     private String apiKey;
 
     private static final String API_URL = "https://api.groq.com/openai/v1/chat/completions";
