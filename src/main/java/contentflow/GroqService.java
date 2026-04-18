@@ -15,7 +15,7 @@ public class GroqService {
     // This automatically reads your API key from application.properties
     @Value("${GROQ_API_KEY}")
 private String apiKey;
-    private String apiKey;
+    
 
     private static final String API_URL = "https://api.groq.com/openai/v1/chat/completions";
     private static final String MODEL = "llama-3.3-70b-versatile";
